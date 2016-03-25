@@ -1,0 +1,71 @@
+.footer {
+	background-color: $light-black;
+	padding: 45px 0 1%;
+	text-align: center;
+
+	@include breakpoint ($break-medium) {
+		padding: 20px 0;
+		text-align: left;
+	}
+
+	.social-icons {
+		margin-bottom: 55px;
+		width: 100%;
+		font-size: 0;
+
+		@include breakpoint ($break-medium) {
+			margin-bottom: 0;
+			float: right;
+			width: auto;
+		}
+
+		a {
+			padding: 0 4%;
+			display: inline-block;
+
+			@include breakpoint ($break-small) {
+				padding: 0 5%;
+			}
+
+			@include breakpoint ($break-medium) {
+				padding: 0 0 0 25px;
+			}
+
+			&:hover {
+				opacity: .8;
+			}
+
+			img {
+				width: auto;
+				height: 24px;
+
+				@include breakpoint ($break-small) {
+					height: 32px;
+				}
+
+				@include breakpoint ($break-medium) {
+					height: 13px;
+				}
+			}
+		}
+	}
+
+	.container a:nth-child(4) p {
+		margin-bottom: 5px;
+	}
+
+	p {
+		color: $dark-text;
+		margin-bottom: 10%;
+		font-weight: 400;
+
+		@include breakpoint ($break-medium) {
+			font-size: 12px;
+			font-size: 1.2rem;
+			margin-bottom: 0;
+			display: inline-block;
+			padding-right: 5px;
+			font-weight: 500;
+		}
+	}
+} 

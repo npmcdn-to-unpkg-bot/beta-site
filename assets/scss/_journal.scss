@@ -1,0 +1,209 @@
+.journal {
+
+	.top-section {
+		background-color: $light-black;
+		color: $white;
+
+		h1 {
+			padding: 11% 0 15%;
+			margin-bottom: 0;
+
+			@include breakpoint ($break-medium) {
+				padding: 15px 0 65px;
+			}
+		}
+	}
+
+	.page-menu {
+		@include breakpoint ($break-medium) {
+			// use this when adding medium social links max-width: 550px;
+			max-width: 400px;
+		}
+	}
+
+	.social-heading {
+		display: inline-block;
+		margin:0 auto 32px;
+
+		img {
+			margin-bottom: 20px;
+		}
+	}
+
+	.instagram {
+		@include clearfix;
+		background-color: $white;
+		padding: 5% 0 0;
+		text-align: center;
+
+		.instagram-grid {
+			.instagram-grid:after {
+				content: '';
+				display: block;
+				clear: both;
+			}
+
+			.grid-sizer,
+			.grid-item {
+				width: 33.333%;
+			}
+
+			.gutter-sizer { width: 0; }
+
+			.grid-item {
+				float: left;
+				background: $white;
+				height: 0;
+				padding-bottom: 33.333%;
+				overflow: hidden;
+
+				img {
+					max-width: 100%;
+					margin: 0 0 -4px 0;
+				}
+			}
+		}
+	}
+
+	.medium {
+		@include clearfix;
+		background-color: $light-four;
+		padding: 5% 0 3.5%;
+		text-align: center;
+
+		.third {
+			text-align: left;
+			word-break: break-word;
+
+			@include breakpoint ($break-medium) {
+				width: 100%;
+			}
+
+			@include breakpoint ($break-large) {
+				width: 33.333%;
+			}
+
+			img {
+				max-width: 100%;
+				height: auto;
+			}
+
+			a {
+				color: $dark-one;
+			}
+
+			.medium-feed-image {
+				margin-bottom: 15px;
+				text-align: center;
+			}
+
+			.medium-feed-snippet {
+				font-weight: 300;
+				font-size: 1.9px;
+				font-size: 1.9rem;
+				padding: 0 0 24px 0;
+				line-height: 1.5;
+
+				.rssTitle {
+					font-family: $font-chron-disp;
+					font-size: 24px;
+					font-size: 2.4rem;
+					margin-bottom: 14px;
+					line-height: 1.2;
+					font-weight: normal;
+				}
+			}
+
+			.medium-feed-link {
+				display: none;
+			}
+
+			@include breakpoint ($break-large) {
+				&#medium0 {
+					padding: 0 60px 0 0;
+				}
+
+				&#medium1 {
+					padding: 0 30px;
+				}
+
+				&#medium2 {
+					padding: 0 0 0 60px;
+				}
+			}
+		}
+	}
+
+	.twitter {
+		@include clearfix;
+		background-color: $white;
+		padding: 5% 0 3.5%;
+		text-align: center;
+
+		.third {
+			text-align: left;
+			word-break: break-word;
+
+			@include breakpoint ($break-medium) {
+				width: 100%;
+			}
+
+			@include breakpoint ($break-large) {
+				width: 33.333%;
+			}
+
+			img {
+				max-width: 100%;
+				height: auto;
+			}
+
+			a {
+				color: $dark-one;
+			}
+
+			.tweet {
+				margin-bottom: 30px;
+
+				.tco-hidden, .tco-ellipsis {
+					display: none;
+				}
+			}
+
+			.timePosted {
+				a {
+					@extend .utility;
+				}
+			}
+
+			&.hasMedia {
+				line-height: 24px;
+
+				img {
+					margin-bottom: 20px;
+				}
+			}
+
+			&.noMedia {
+				.tweet, .tweet a {
+					font-size: 42px;
+					font-size: 4.2rem;
+					font-weight: 100;
+				}
+			}
+
+			@include breakpoint ($break-large) {
+				&#twitter0 {
+					padding: 0 60px 0 0;
+				}
+
+				&#twitter1 {
+					padding: 0 30px;
+				}
+
+				&#twitter2 {
+					padding: 0 0 0 60px;
+				}
+			}
+		}
+	}
+}

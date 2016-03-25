@@ -1,0 +1,228 @@
+.ouai {
+
+	.content-2 {
+		background-color: $pepsi-grey;
+		padding: 13.5% 0;
+
+		@include breakpoint ($break-medium) {
+			padding: 12.5% 0 14%;
+		}
+
+		@include breakpoint ($break-large) {
+			padding: 150px 0 170px;
+		}
+
+		.text-only-small {
+			text-align: left;
+
+			@include breakpoint ($break-medium) {
+				text-align: center;
+			}
+
+			.promo-body {
+				max-width: none;
+			}
+		}
+	}
+
+	.content-3 {
+		@include clearfix;
+		text-align: center;
+		background-color: $light-four;
+		padding: 14% 0 18%;
+
+		@include breakpoint ($break-medium) {
+			padding: 11% 0 6.5%;
+		}
+
+		@include breakpoint ($break-large) {
+			padding: 130px 0 75px;
+		}
+
+		.jen {
+			width: 80%;
+
+			@include breakpoint ($break-medium) {
+				width: auto;
+			}
+		}
+
+		.text-only-small {
+			padding-top: 70px;
+
+			@include breakpoint ($break-medium) {
+				padding-top: 50px;
+			}
+		}
+
+		.promo-body {
+			max-width: 865px;
+		}
+
+		.third {
+			@include span(4 of 12);
+			padding-top: 80px;
+
+			@include breakpoint ($break-medium) {
+				padding-top: 95px;
+			}
+
+			img {
+				padding-bottom: 20px;
+				height: 40px;
+				box-sizing: content-box;
+
+				@include breakpoint ($break-small) {
+					height: 55px;
+				}
+
+				@include breakpoint ($break-medium) {
+					height: auto;
+				}
+			}
+
+			@include breakpoint (759px) {
+				.ouai-twitter {
+					padding-bottom: 33px;
+				}
+			}
+		}
+	}
+
+	.content-4 {
+		position: relative;
+		font-size: 0;
+
+		img {
+			width: 100%;
+		}
+
+		.text-only-small {
+			color: $white;
+
+			.promo-body {
+				max-width: 850px;
+			}
+		}
+	}
+
+	.content-5 {
+		background-color: $light-four;
+
+		.half:nth-child(2) {
+			text-align: center;
+			padding: 10% 0 18%;
+
+			@include breakpoint ($break-medium) {
+				padding: 14.5% 0 9%;
+			}
+
+			@include breakpoint ($break-large) {
+				padding: 160px 0 100px;
+			}
+
+			img {
+				width: 58%;
+
+				@include breakpoint ($break-medium) {
+					width: auto;
+				}
+			}
+		}
+	}
+
+	.content-6 {
+		text-align: center;
+		padding: 14% 0 10%;
+
+		@include breakpoint ($break-medium) {
+			padding: 12.5% 0 4%;
+		}
+
+		@include breakpoint ($break-large) {
+			padding: 150px 0 50px;
+		}
+
+		.text-only-small {
+			padding-bottom: 70px;
+		}
+
+		img {
+			width: 100%;
+			
+			@include breakpoint ($break-medium) {
+				width: 94%;
+				max-width: 1034px;
+			}
+		}
+	}
+
+	.content-8 {
+		background-color: $light-three;
+		padding: 14% 0 10.5%;
+
+		@include breakpoint ($break-medium) {
+			padding: 13.5% 0 3.5%;
+		}
+
+		@include breakpoint ($break-large) {
+			padding: 160px 0 54px;
+		}
+
+		.text-only-small {
+			padding-bottom: 55px;
+		}
+
+		.promo-body {
+			max-width: 880px;
+		}
+
+		img {
+			width: 94%;
+		}
+	}
+
+	.content-9 {
+		background-color: $pepsi-grey;
+		text-align: center;
+		font-size: 0;
+		padding-top: 12%;
+
+		@include breakpoint ($break-medium) {
+			padding: 13.5% 0 0;
+		}
+
+		@include breakpoint ($break-large) {
+			padding: 160px 0 0;
+		}
+
+		img {
+			width: 100%;
+		}
+
+		img:nth-child(2) {
+			width: 73.8%;
+			padding-top: 35px;
+
+			@include breakpoint ($break-medium) {
+				padding-top: 70px;
+			}
+		}
+	}
+
+	.content-10 {
+		padding: 12% 0 11%;
+
+		@include breakpoint ($break-medium) {
+			padding: 13% 0 16%;
+		}
+
+		@include breakpoint ($break-large) {
+			padding: 155px 0 190px;
+		}
+
+		.promo-body {
+			max-width: 820px;
+		}
+	}
+}

@@ -1,0 +1,19 @@
+.alt-header {
+	background-color: $white;
+}
+
+.not-found {
+	background-color: $light-black;
+	min-height: 300px;
+	text-align: center;
+	position: relative;
+
+	h1 {
+		color: $white;
+		margin-bottom: 15px;
+	}
+
+	.header {
+		color: $dark-text;
+	}
+}

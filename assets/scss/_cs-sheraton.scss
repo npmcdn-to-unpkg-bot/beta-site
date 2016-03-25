@@ -1,0 +1,47 @@
+.sheraton {
+	.content-2 {
+		background-color: $sheraton-blue-dark;
+		color: $white;
+	}
+
+	.content-3 {
+		.header {
+			color: $sheraton-blue-dark;
+		}
+	}
+
+	.content-4 {
+		@include clearfix;
+	}
+
+	.content-5 {
+		background-color: $light-one;
+	}
+
+	.content-6 {
+		background-color: $sheraton-blue-dark;
+		color: $white;
+	}
+
+	.content-7 {
+		@include clearfix;
+		text-align: center;
+
+		.background {
+			position: relative;
+			padding-top: 100%;
+		}
+
+		.half:first-child {
+			background-color: $light-four;
+		}
+
+		.half:nth-child(2) {
+			background-color: $sheraton-blue-light;
+		}
+	}
+
+	.content-10 {
+		background-color: $sheraton-blue-grey;
+	}
+}

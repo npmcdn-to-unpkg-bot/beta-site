@@ -1,0 +1,56 @@
+//------------------------------------------------
+// REMS
+//------------------------------------------------
+
+html {
+	// Root for rems
+		// 62.5% takes 16px (browser default size for medium text) down to 10px
+		// ref: http://clagnut.com/blog/348/
+	font-size: 62.5%;
+	-webkit-font-smoothing: antialiased;
+	line-height: 1;
+}
+
+// -------------------
+// Media Query Helpers
+// -------------------
+
+@mixin breakpoint($bp) {
+	@media (min-width: $bp)  {
+		@content;
+	}
+}
+
+// -------------------
+// Clearfix
+// -------------------
+
+@mixin clearfix {
+	&:before,
+	&:after {
+		content: '';
+		display: table;
+	}
+
+	&:after {
+		clear: both;
+	}
+}
+
+// --------------------
+// Breakpoint indicator
+// --------------------
+
+.breakpoint-context {
+	position: absolute;
+	top: -999em;
+	left: -999em;
+	z-index: 1;
+
+	@include breakpoint($break-medium) {
+		z-index: 2;
+	}
+	@include breakpoint($break-large) {
+		z-index: 3;
+	}
+}

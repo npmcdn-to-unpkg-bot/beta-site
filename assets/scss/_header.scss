@@ -1,0 +1,201 @@
+.site-header {
+	height: 70px;
+	width: 100%;
+	z-index: 999;
+	padding-bottom: 15px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	-webkit-transition: background-color 0.2s;
+	transition: background-color 0.5s;
+	box-sizing: content-box;
+
+	&:hover {
+		background-color: $light-black !important;
+
+		.nav-icon,
+		.case-logo {
+			display: inline-block !important;
+		}
+	}
+
+	&.sticky-up {
+		background-color: $light-black;
+	}
+
+	&.sticky-down {
+		background-color: transparent;
+
+		.nav-icon,
+		.case-logo {
+			display: none;
+		}
+	}
+
+	div {
+		display: inline-block;
+		box-sizing: content-box;
+	}
+
+	.nav-icon {
+		height: 21px;
+		width: 27px;
+		background-size: 27px 21px;
+		background-image: url('../img/nav-white.png');
+		background-position: right bottom;
+		background-repeat: no-repeat;
+		padding: 32px 0 0 42px;
+		box-sizing: content-box;
+		cursor: pointer;
+
+		&.nav-x {
+			background-image: url('../img/nav-x.png');
+			height: 22px;
+			width: 22px;
+			background-size: 22px 22px;
+		}
+	}
+
+	.case-logo {
+		height: 25px;
+		width: 81px;
+		background-size: 81px 25px;
+		float: right;
+		background-image: url('../img/logo-white.png');
+		background-position: left bottom;
+		background-repeat: no-repeat;
+		padding: 30px 42px 0 0;
+		box-sizing: content-box;
+	}
+
+	//On the Case Study pages, use the black icons and white background
+	&.alt-header {
+
+		&:hover {
+			background-color: $white !important;
+		}
+
+		&.sticky-up {
+			background-color: $white;
+		}
+
+		.nav-icon {
+			background-image: url('../img/nav-black.png');
+		}
+
+		.case-logo {
+			background-image: url('../img/logo-black.png');
+		}
+	}
+}
+
+.main-nav {
+	display: none;
+	position: absolute;
+	background-color: $light-black;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 6;
+	min-height: 620px;
+
+	&.navOn {
+		overflow-y: auto;
+		overflow-x: hidden;
+	}
+
+	@include breakpoint ($break-small) {
+		min-height: 1100px;
+	}
+
+	@include breakpoint ($break-medium) {
+		min-height: 990px;
+	}
+
+	.over-text {
+		padding: 95px 0 123px;
+
+		@include breakpoint ($break-small) {
+			padding: 95px 0 171px;
+		}
+
+		@include breakpoint ($break-medium) {
+			padding: 95px 0 68px;
+		}
+	}
+
+	.title {
+		color: $white;
+		display: block;
+		line-height: 2;
+
+		@include breakpoint ($break-small) {
+			line-height: 1.8;
+		}
+
+		@include breakpoint ($break-medium) {
+			line-height: 1.5;
+		}
+
+		&:hover {
+			color: $dark-text;
+			opacity: 1;
+		}
+	}
+
+	.social-icons {
+		position: absolute;
+		width: auto;
+		left: 50%;
+		margin-left: -154px;
+		bottom: 60px;
+
+		@include breakpoint ($break-small) {
+			bottom: 100px;
+			margin-left: -216px;
+		}
+
+		@include breakpoint ($break-medium) {
+			bottom: 40px;
+			margin-left: -170px;
+		}
+
+			a img {
+				padding: 0 18px;
+				height: 22px;
+
+				@include breakpoint ($break-small) {
+					padding: 0 25px;
+					height: auto;
+				}
+
+				@include breakpoint ($break-medium) {
+					padding: 0 22px;
+					height: 22px;
+				}
+			}
+	}
+}
+
+.page-wrapper {
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 2;
+	background-color: #1a1a1a;
+	position: absolute;
+	min-width: 340px;
+
+	&.navOn {
+		overflow-y: auto;
+		overflow-x: hidden;
+	}
+
+	.site-content {
+		background-color: #FFF;
+		width: 100%;
+		height: 100%;
+	}
+}

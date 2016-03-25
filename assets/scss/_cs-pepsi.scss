@@ -1,0 +1,264 @@
+.pepsi {
+
+	.hero-background {
+		background-color: $pepsi-blue;
+
+		img {
+			margin: 0 auto;
+			width: 41.3%;
+			max-width: 496px;
+			padding-top: 6.5%;
+
+			@include breakpoint ($break-medium) {
+				padding-top: 11.5%;
+			}
+
+			@include breakpoint ($break-large) {
+				padding-top: 140px;
+			}
+		}
+	}
+
+	.content-2 {
+		@include clearfix;
+		background-color: $pepsi-grey;
+
+		.half:first-child {
+			padding-top: 15%;
+
+			@include breakpoint ($break-medium) {
+				padding-top: 12.2%;
+			}
+		}
+
+		.half:nth-child(2) {
+			position: relative;
+			font-size: 0;
+			text-align: center;
+
+			@include breakpoint ($break-large) {
+				text-align: left;
+			}
+
+			img {
+				padding: 16% 0 0;
+				box-sizing: content-box;
+				width: 48.6%;
+
+				@include breakpoint ($break-medium) {
+					width: auto;
+					max-height: 600px;
+				}
+
+				@include breakpoint ($break-large) {
+					max-height: none;
+					padding: 24% 0 0 10%;
+				}
+			}
+
+			p {
+				position: absolute;
+				bottom: 14.8%;
+				right: 9.5%;
+
+				@include breakpoint ($break-medium) {
+					right: 15%;
+				}
+
+				@include breakpoint ($break-large) {
+					right: 23.5%;
+				}
+			}
+		}
+	}
+
+	.content-3 {
+		@include clearfix;
+		background-color: $pepsi-blue;
+		color: $white;
+		padding-bottom: 5%;
+
+		@include breakpoint ($break-medium) {
+			padding-bottom: 0;
+		}
+
+		.half {
+			padding: 14.2% 0;
+		}
+
+		.half:nth-child(2) {
+			text-align: center;
+			padding-top: 8%;
+
+			@include breakpoint ($break-large) {
+				text-align: right;
+				padding-top: 14.2%;
+			}
+
+			img {
+				margin: 0 auto;
+				width: 100%;
+				max-width: 600px;
+				padding: 0 32px;
+
+				@include breakpoint ($break-large) {
+					padding-right: 30px;
+					width: 81.3%;
+				}
+			}
+		}
+
+		.centered-img {
+			position: relative;
+
+			p {
+				@include breakpoint ($break-medium) {
+					position: absolute;
+				}
+			}
+
+			.original {
+				opacity: .3;
+				top: 28%;
+				left: 11%;
+
+				@include breakpoint ($break-medium) {
+					cursor: pointer;
+				}
+			}
+
+			.revised {
+				bottom: 39%;
+				right: 11%;
+
+				@include breakpoint ($break-medium) {
+					cursor: pointer;
+				}
+			}
+
+			.img-container,
+			img.mobile-only {
+				width: 80%;
+				padding: 7.5% 0 12%;
+				position: relative;
+				margin: 0 auto;
+
+				@include breakpoint ($break-medium) {
+					width: 59.7%;
+					padding: 21% 0;
+				}
+
+				img {
+					width: 100%;
+				}
+
+				.original-logo {
+					display:  none;
+					@include breakpoint ($break-medium) {
+						display: block;
+					}
+				}
+			}
+
+			.original-logo,
+			.revised-logo {
+				display: inline-block;
+
+				@include breakpoint ($break-medium) {
+					position: absolute;
+					left: -2px;
+					top: 20%;
+				}
+			}
+
+			.original-logo {
+				@include breakpoint ($break-medium) {
+					z-index: 1;
+				}
+			}
+
+			.revised-logo {
+				@include breakpoint ($break-medium) {
+					z-index: 2;
+				}
+			}
+
+			.prevent-click-mobile {
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				padding-top: 115%;
+				width: 100%;
+			}
+		}
+	}
+
+	.content-5 {
+		@include clearfix;
+	}
+
+	.content-4,
+	.content-6 {
+		padding: 13% 0 10%;
+
+		@include breakpoint ($break-medium) {
+			padding: 8.8% 0 3%;
+		}
+
+		.text-only-small {
+			padding-bottom: 15%;
+
+			@include breakpoint ($break-medium) {
+				padding-bottom: 6%;
+			}
+		}
+	}
+
+	.content-6,
+	.content-7,
+	.content-8 {
+		.text-only-small {
+			text-align: left;
+
+			@include breakpoint ($break-medium) {
+				text-align: center;
+			}
+		}
+	}
+
+	.content-7 {
+		background-color: $light-four;
+		padding: 13% 0 10%;
+
+		@include breakpoint ($break-medium) {
+			padding: 9% 0 4.5%;
+		}
+
+		.text-only-small {
+			padding-bottom: 13%;
+
+			@include breakpoint ($break-medium) {
+				padding-bottom: 6%;
+			}
+		}
+	}
+
+	.content-8 {
+		background-color: $light-four;
+		padding: 0 0 15%;
+
+		.text-only-small {
+			padding: 12% 32px 0;
+			background-color: $white;
+		}
+
+		.centered-img {
+			background-color: $white;
+			padding-top: 12%;
+
+			@include breakpoint ($break-medium) {
+				padding-top: 0;
+			}
+		}
+	}
+}

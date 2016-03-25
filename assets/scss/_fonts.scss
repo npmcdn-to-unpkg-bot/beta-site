@@ -1,0 +1,82 @@
+//--------------------------------------------------------------
+// Fonts
+//--------------------------------------------------------------
+
+@font-face {
+	font-family: 'aktiv-grotesk';
+	src: url('../fonts/AktivGrotesk-Thin.otf') format("opentype");
+	font-weight: 200;
+}
+
+@font-face {
+	font-family: 'aktiv-grotesk';
+	src: url('../fonts/AktivGrotesk-Light.otf') format("opentype");
+	font-weight: 300;
+}
+
+@font-face {
+	font-family: 'aktiv-grotesk';
+	src: url('../fonts/AktivGrotesk-Medium.otf') format("opentype");
+	font-weight: 500;
+}
+
+@font-face {
+	font-family: 'aktiv-grotesk';
+	src: url('../fonts/AktivGrotesk-Regular.otf') format("opentype");
+	font-weight: 400;
+}
+
+
+@font-face {
+	font-family: 'chronicle-deck';
+	src: url('../fonts/ChronicleDeck-Roman.otf') format("opentype");
+}
+
+
+@font-face {
+	font-family: 'chronicle-disp';
+	src: url('../fonts/ChronicleDisp-XLight.otf') format("opentype");
+	font-weight: 100;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'chronicle-disp';
+	src: url('../fonts/ChronicleDisp-Light.otf') format("opentype");
+	font-weight: 200;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'chronicle-disp';
+	src: url('../fonts/ChronicleDisp-Roman.otf') format("opentype");
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'chronicle-disp';
+	src: url('../fonts/ChronicleDisp-XLightItalic.otf') format("opentype");
+	font-weight: 100;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'chronicle-disp';
+	src: url('../fonts/ChronicleDisp-LightItal.otf') format("opentype");
+	font-weight: 200;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'chronicle-disp';
+	src: url('../fonts/ChronicleDisp-Italic.otf') format("opentype");
+	font-weight: 400;
+	font-style: italic;
+}
+
+
+@font-face {
+	font-family: 'helvetica-neue';
+	src: url('../fonts/HelveticaNeueLTStd-Md.otf') format("opentype");
+}

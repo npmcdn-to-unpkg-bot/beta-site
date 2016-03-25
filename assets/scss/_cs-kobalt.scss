@@ -1,0 +1,43 @@
+.kobalt {
+	.content-2 {
+		background-color: $light-black;
+		color: $white;
+
+		.header {
+			color: $kobalt-red;
+		}
+	}
+
+	.content-3 {
+		color: $white;
+
+		.half:first-child {
+			background: url('../img/kobalt-bkg.jpg') center center no-repeat;
+		}
+	}
+
+	.content-6 {
+		text-align: center;
+	}
+
+	.content-7 {
+		background-color: $light-black;
+		color: $white;
+
+		p {
+			color: $kobalt-red;
+		}
+	}
+
+	.content-8 {
+		background-color: $kobalt-grey;
+	}
+
+	.content-9 {
+		background-color: $dark-text;
+	}
+
+	.content-10 {
+		background-color: $kobalt-red;
+	}
+}

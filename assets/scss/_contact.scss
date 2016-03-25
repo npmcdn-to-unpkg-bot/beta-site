@@ -1,0 +1,131 @@
+.contact {
+	.top-section {
+		background-color: $light-black;
+		color: $white;
+
+		h1 {
+			padding: 11% 0 15%;
+			margin-bottom: 0;
+
+			@include breakpoint ($break-medium) {
+				padding: 15px 0 65px;
+			}
+		}
+	}
+
+	.page-menu {
+		@include breakpoint ($break-medium) {
+			max-width: 260px;
+		}
+	}
+
+	.address {
+		@include clearfix;
+		background-color: $medium-one;
+		text-align: center;
+		padding: 14% 0 3%;
+
+		@include breakpoint ($break-medium) {
+			padding: 13% 0 8%;
+		}
+
+		.phone {
+			padding-top: 15%;
+
+			@include breakpoint ($break-medium) {
+				padding-top: 65px;
+			}
+		}
+
+		.emails {
+			@include clearfix;
+			padding-top: 70px;
+
+			.third {
+				margin-bottom: 40px;
+
+				@include breakpoint ($break-small) {
+					margin-bottom: 70px;
+				}
+
+				@include breakpoint ($break-medium) {
+					margin-bottom: 0;
+				}
+			}
+
+			.header {
+				margin-bottom: 3.5%;
+
+				@include breakpoint ($break-medium) {
+					margin-bottom: 20px;
+				}
+			}
+
+			a {
+				font-size: 28px;
+				font-size: 2.8rem;
+
+				@include breakpoint ($break-small) {
+					font-size: 44px;
+					font-size: 4.4rem;
+				}
+
+				@include breakpoint ($break-medium) {
+					font-size: 16px;
+					font-size: 1.6rem;
+				}
+			}
+		}
+
+		.social-icons {
+			@include clearfix;
+			padding-top: 65px;
+			display: none;
+
+			@include breakpoint ($break-medium) {
+				display: block;
+			}
+
+			a {
+				padding: 0 2%;
+
+				&:hover {
+					opacity: .8;
+				}
+
+				img {
+					height: 22px;
+				}
+			}
+		}
+	}
+
+	.iframe-wrapper {
+		padding-top: 120%;
+
+		@include breakpoint ($break-small) {
+			padding-top: 100%;
+		}
+
+		@include breakpoint ($break-medium) {
+			padding-top: 65%;
+		}
+	}
+
+	.directions {
+		text-align: center;
+		padding: 7% 0;
+
+		@include breakpoint ($break-medium) {
+			padding: 5% 0 14%;
+		}
+
+		a h2 {
+			margin-bottom: 0;
+
+			&:hover {
+				opacity: .8;
+			}
+		}
+	}
+}

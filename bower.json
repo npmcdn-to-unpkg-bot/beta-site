@@ -1,0 +1,19 @@
+{
+  "name": "CaseAgency",
+  "version": "1.0.0",
+  "main": "index.php",
+  "ignore": [
+    ".jshintrc",
+    "**/*.txt"
+  ],
+  "dependencies": {
+    "jquery": "2.2.0",
+    "modernizr": "2.8.3",
+    "slick.js": "1.5.5",
+    "susy": "2.2.1",
+    "normalize-scss": "3.0.3",
+    "masonry": "^4.0.0",
+    "pagePiling.js": "pagepiling.js#^1.5.3"
+  },
+  "private": true
+}

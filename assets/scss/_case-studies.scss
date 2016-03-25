@@ -1,0 +1,37 @@
+.case-studies {
+	padding-bottom: 6.5%;
+
+	.header {
+		margin: 14% 0;
+
+		@include breakpoint ($break-medium) {
+			margin: 25px 0 35px;
+		}
+	}
+
+	.title {
+		text-align: left;
+		font-weight: 300;
+	}
+
+	.promo-body {
+		color: $dark-text;
+		margin-bottom: 7.5%;
+		font-weight: 400;
+		display: inline-block;
+
+		@include breakpoint ($break-medium) {
+			margin-bottom: 40px;
+		}
+	}
+
+	img {
+		padding-left: 20px;
+		height: 12px;
+
+		@include breakpoint ($break-small) {
+			height: auto;
+		}
+	}
+}
+

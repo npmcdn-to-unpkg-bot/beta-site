@@ -1,0 +1,63 @@
+// ------
+// Colors
+// ------
+
+$black: #000;
+$white: #FFF;
+$light-black: #1a1a1a;
+
+//Greys
+$light-one: #f7f7f7;
+$light-two: #f5f5f5;
+$light-three: #F2f2f2;
+$light-four: #e6e6e6;
+$medium-one: #cdcece;
+$medium-two: #c2c3c4;
+$medium-three: #adafb0;
+$dark-one: #838588;
+$dark-two: #262626;
+$dark-text: #808080;
+$cream-grey: #ece9e8;
+
+//Case Study Specific Colors
+$araks-teal: #C2E9DC;
+$araks-light-peach: #FFE8DA;
+$araks-peach: #E69E7D;
+$pepsi-grey: #CDCCCC;
+$pepsi-blue: #3265B5;
+$kobalt-red: #FB391D;
+$kobalt-grey: #dedee0;
+$sheraton-blue-dark: #2F3F4F;
+$sheraton-blue-light: #9CA7B1;
+$sheraton-blue-grey: #AAA9AE;
+$herman-red: #FF1200;
+$herman-grey: #CECECB;
+
+// -----
+// Fonts
+// -----
+
+$font-aktiv: 'aktiv-grotesk', Arial, sans-serif;
+$font-chron-deck: 'chronicle-deck', Arial, sans-serif;
+$font-chron-disp: 'chronicle-disp', Arial, sans-serif;
+$font-helv: 'helvetica-neue', Arial, sans-serif;
+
+// -----------
+// Breakpoints
+// -----------
+
+$break-xsmall: 			380px;
+$break-small: 			560px;
+$break-medium: 			760px;
+$break-large: 			1050px;
+
+// ----
+// Grid
+// ----
+
+$susy: (
+	columns: 12,
+	container: 1850,
+	gutters: 0,
+	output: float
+);
